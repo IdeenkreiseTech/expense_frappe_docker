@@ -14,7 +14,7 @@ sudo docker build \
   --build-arg=PYTHON_VERSION=3.11.9 \
   --build-arg=NODE_VERSION=18.20.2 \
   --build-arg=APPS_JSON_BASE64=$APPS_JSON_BASE64 \
-  --tag=ghcr.io/ideenkreisetech/profond_app/profond_app:$TAG \
+  --tag=ghcr.io/ideenkreisetech/expense_manager_frappe/expense_manager_frappe:$TAG \
   --file=images/custom/Containerfile . \
   --no-cache
 
