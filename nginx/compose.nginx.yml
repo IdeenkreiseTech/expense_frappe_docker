@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    ports:
+      - "8085:8085"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./certificates:/etc/ssl/certs
+    networks:
+      - frappe_network
+
+networks:
+  frappe_network:
+    driver: bridge
